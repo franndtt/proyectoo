@@ -1,0 +1,482 @@
+li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+#paginas li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    display: flex;
+    font-family: "tobi";
+    
+}
+
+div {
+    display: inline;
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: 40px;
+    left: 40px;
+
+}
+
+
+#paginas li  {
+   list-style: none;
+   text-align: center;
+   
+   
+
+}
+
+
+
+.navitem {
+    margin: 0 80px;
+}
+
+body {
+    background-color: black
+}
+
+
+
+@font-face {
+    font-family: "tobi" ;
+    src: url(../assets/fuentes/COLLENIS.ttf);
+}
+
+.t1bi {
+    width: 950px;
+    height: 1050px;
+    border: 5px;color: black;
+    border-radius: 15px;
+    
+    
+}
+
+
+
+
+
+
+#biografia {
+    
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+   margin-right: 50px;
+   
+   
+   
+   
+}
+
+.tobi {
+
+    border: 5px;color: black;
+    border-radius: 15px
+    
+    
+    
+    
+}
+
+
+#video iframe {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+
+}
+
+#video h1 {
+    
+    margin-top: 150px;
+    margin-bottom: 20px;
+    font-size: 35px
+
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: "tobi";
+    color: white;
+}
+
+.spotify {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 50px;
+    list-style: none;
+    position: absolute;
+    top: 400%;
+    left: 1205%;
+    border: solid 5px black;
+    border-radius: 15px;
+    
+    
+    
+}
+
+.nombre {
+    text-decoration: none;
+    color: black;
+    font-size: 100px;
+    list-style: none;
+    position: absolute;
+    top: 200%;
+    left: 1200%;
+}
+
+.youtube {
+    text-decoration: none;
+    color: red;
+    font-size: 50px;
+    list-style: none;
+    position: absolute;
+    top: 480%;
+    left: 1198%;
+    border: solid 5px black;
+    border-radius: 15px;
+}
+
+
+
+.img1 {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 200px;
+    margin-left: 350px;
+}
+
+
+.img2 {
+    margin-bottom: 300px;
+    margin-left: 00px;
+}
+
+header a {
+    margin-bottom: 100%;
+}
+
+.ig {
+    margin-left: 750px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.derechos {
+    margin-right: 3000px;
+}
+
+.temas {
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-bottom: 40px;
+}
+
+.letras li {
+color: white;
+list-style: none;
+text-align: center;
+display: block;
+   
+}
+
+.letras a {
+    color: white;
+list-style: none;
+text-align: center;
+display: block;
+}
+    
+
+.alcoholl {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+    
+}
+
+.alcoholl p {
+   text-align: center;
+   margin: 60px;
+}
+
+.alco {
+    margin-left: 80px;
+}
+
+.time {
+    margin-left: 80px;
+}
+
+.tiime {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+
+.tiime p {
+    text-align: center;
+   margin: 60px;
+}
+
+.caoos {
+    margin-left: 80px;
+}
+
+.caos {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.caos p {
+    text-align: center;
+   margin: 60px;
+}
+
+.spoti {
+    width: 40px;
+    height: 40px;
+}
+
+.booddy {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, 2fr) 0.5fr;
+    grid-template-columns: repeat(3fr,1);
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+header {
+    
+    grid-area: header;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+main {
+    grid-area: main;
+    
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top:1px solid white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    }
+
+.instagramm {
+    color: blueviolet;
+}
+
+.spotifi {
+    color: green;
+}
+
+#t0bi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    #biografiadetobi {
+        display: flex;
+    }
+    .img1 {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        flex-wrap: nowrap;
+    }
+    
+    .img2 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+        
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+
+    
+    
+
+}
+
+@media (max-width: 768px) {
+
+    #biografiadetobi {
+        display: flex;
+        flex-direction: column;
+    }
+    .img1 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+        margin-right: 0;
+        margin-left: 80px;
+        border: 5px;color: black;
+        border-radius: 15px
+    }
+    .img2 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+        
+    }
+
+    
+
+    #t0bi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .t1bi {
+        width: 1000px;
+        height: 1050px;
+    }
+    
+    .booddy {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 2fr repeat(1, 1fr) 0.5fr;
+        grid-template-columns: repeat(3fr,1);
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
+    
+    header {
+        margin-top: 200px;
+    }
+}
+
+
+   
+
+
+@media (max-width: 600px) {
+
+    .img1 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+        margin-left: 20px;
+        margin-right: 40px;
+        border: 5px;color: black;
+        border-radius: 15px
+    }
+
+    .img2 {
+        margin-left: 50px;
+    }
+
+#paginas {
+    display: flex;
+}
+
+.miheaderr a img {
+    margin-right: 60px;
+}
+.miheaderr a {
+    margin-right: 0px;
+    margin-left: 80px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+
+   .img1 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+        margin-left: 20px;
+        margin-right: 40px;
+        border: 5px;color: black;
+        border-radius: 15px
+    }
+
+    .img2 {
+        width: 620px;
+        height: 620px;
+        margin-left: 0px;
+        margin-right: 60px;
+    }
+
+
+
+
+.miheader a img {
+margin-left: 80px;
+}
+
+footer {
+    width: 80vh;
+    
+}
+}
+
+@media (max-width: 320px) {
+    
+    .miheader a img {
+        margin-left: 150px;
+        }
+    footer {
+        width: 80vh;
+        
+    }
+}
