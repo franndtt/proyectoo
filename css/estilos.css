@@ -192,16 +192,18 @@ header a {
 .letras li {
 color: white;
 list-style: none;
-text-align: center;
-display: block;
+margin-top: 180px;
+
+
    
 }
 
 .letras a {
+    
     color: white;
 list-style: none;
-text-align: center;
-display: block;
+
+
 }
     
 
@@ -284,6 +286,24 @@ main {
     
 }
 
+.imagenletra {
+    width: 800px;
+    height: 800px;
+    margin-left: 2000px;
+    margin-bottom: 600px;
+}
+
+.letras {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+
 footer {
     grid-area: footer;
     display: flex;
@@ -312,6 +332,7 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
