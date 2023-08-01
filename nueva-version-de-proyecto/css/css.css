@@ -1,0 +1,469 @@
+    /* ================================= GENERAL  ================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh 1fr 1fr 10vh; 
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer";
+}
+
+
+
+
+header {
+    height: 15vh;
+    margin-left: 700px;
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     justify-items: center;
+     grid-area: header;
+     text-align: center;
+     
+     list-style: none;
+}
+
+main {
+    grid-area: main;
+    max-height: calc(100vh - 25vh); 
+    overflow: auto; 
+}
+
+
+footer {
+    grid-area: footer;
+    height: 20vh;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+footer p {
+  color: white;
+}
+
+
+.spotifi {
+    color: green;
+}
+
+.instagramm {
+    color: blueviolet;
+}
+
+
+
+
+
+@font-face {
+    font-family: "tobi" ;
+    src: url(../assets/fuentes/COLLENIS.ttf);
+}
+
+
+
+    /* ================================= INICIO ================================= */
+
+
+#paginasmain li {
+    font-family: tobi;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    
+}
+
+#paginasmain a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}   
+
+.maininicio {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel-inner img {
+    flex-basis: 50%;
+    width: 700px;
+    height: 600px;
+
+}
+#carouselExampleIndicators {
+    
+    width: 700px;
+    height: 600px;
+}
+
+.cerocero {
+    flex-basis: 50%;
+    margin-right: 160px;
+    margin-left: 160px;
+      
+    
+    }
+
+   
+    /* =================================TRANSICIONES DE INICIO ================================= */
+  .transicion {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+  .image1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      transition: opacity 0.8s linear;
+      background-image: url('../assets/images/transicion-1.jpg'); 
+      opacity: 1;
+    }
+
+    
+    
+    
+    
+  .image2 {
+      
+      background-image: url('../assets/images/transicion-2.jpg'); 
+      opacity: 0;
+    }
+    
+  .transicion:hover .image1 {
+      opacity: 0;
+    }
+    
+  .transicion:hover .image2 {
+      opacity: 1;
+      
+    }
+
+    .transicion-2 {
+      
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .transicion-2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 4s linear;
+      width: 700px;
+      height: 600px;
+    }
+    
+    .transicion-2 .button-especifico {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #920796;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: none;
+    }
+
+   
+    
+    .transicion-2:hover img {
+      opacity: 1;
+    }
+    
+    .transicion-2:hover .button-especifico {
+      display: block;
+    }
+
+    
+    
+    
+
+
+
+                 /* ================================= BIOGRAFIA ================================= */
+
+
+
+
+#paginasbio li {
+    font-family: tobi;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    
+}
+
+#paginasbio a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}   
+                 
+
+ .maindebio {
+
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ 
+
+
+ .img1 {
+    
+    margin: auto;
+    margin-left: 400px;
+    width: 600px;
+    height: 600px;
+    
+}
+
+
+                    /* ================================= LANZAMIENTOS ================================= */
+
+#paginaslanzamientos li {
+    font-family: tobi;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    
+}
+
+#paginaslanzamientos a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}   
+
+
+
+
+.lanzamientoz {
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+.lanzamientoz2 {
+    margin-left: 350px;
+}
+
+
+
+                     /* ================================= LYRICS ================================= */
+
+
+#paginaslyrics li {
+    font-family: tobi;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    
+}
+
+#paginaslyrics a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+    
+}   
+
+
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .letras {
+    margin-top: 40px;
+    margin-left: 600px;
+    flex: 1; 
+    padding: 10px; 
+  }
+  
+  .letras ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .letras li {
+    margin-bottom: 150px; 
+  }
+  
+  .letras a{
+    
+    list-style: none;
+    color: white;
+  }
+
+  
+  .imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+  }
+  
+  .imagen img {
+    margin-right: 150px;
+    width: 550px; 
+    
+    height: auto;
+  }
+
+               /* ================================= ALCOHOL,TIME,CAOS ================================= */
+
+.alcohol {
+       color: white;
+}
+
+.alco {
+font-family: tobi;
+ margin-left: 900px;
+}
+
+.alcoholl {
+    
+    margin-left: 50px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.time {
+    color: white;
+    font-family: tobi;
+    margin-left: 935px;
+}
+
+.tiime {
+    margin-left: 50px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.caoos {
+    color: white;
+    font-family: tobi;
+    margin-left: 925px;
+
+}
+
+.caos {
+    margin-left: 50px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+/* Media queries para ajustar estilos en pantallas más pequeñas */
+
+/* A partir de 1200px */
+@media screen and (min-width: 1200px) {
+    header {
+      justify-content: center; /* Centra el header horizontalmente */
+      margin-left: 0; /* Asegura que el header esté centrado en pantallas grandes */
+    }
+  }
+
+  
+  
+
+  @media screen and (max-width: 1200px) {
+    .cerocero {
+        display: none;
+
+}
+}
+  /* A partir de 992px */
+  @media screen and (min-width: 992px) {
+    header {
+      max-width: 992px; /* Limita el ancho del header para que no sea demasiado grande */
+      margin: 0 auto; /* Centra el header horizontalmente */
+    }
+  }
+  
+  /* A partir de 768px */
+  @media screen and (max-width: 768px) {
+    /* Ajustes para pantallas con un ancho máximo de 768px */
+    header {
+      margin-left: 200px; /* Centra el header horizontalmente en pantallas más pequeñas */
+    }
+  
+    #paginasmain li {
+      margin-right: 1rem; /* Reduce el margen derecho de los enlaces del menú */
+      margin-bottom: 1rem; /* Reduce el margen inferior de los enlaces del menú */
+    }
+  
+    .cerocero {
+      display: none; /* Oculta las imágenes individuales en el main */
+    }
+  
+    /* Reduzcamos el tamaño del carrusel */
+    .carousel-inner img {
+      max-width: 90%; /* Ajusta el tamaño máximo del carrusel */
+      height: auto;
+    }
+  }
+  
+  /* A partir de 576px */
+  @media screen and (max-width: 576px) {
+    header {
+      justify-content: center; /* Centra el header horizontalmente en pantallas más pequeñas */
+      
+    }
+
+    
+    .headermain img {
+        margin-right: 200px;
+        height: auto;
+        width: auto;
+
+    }
+  }
+  
+  
+
+
+
